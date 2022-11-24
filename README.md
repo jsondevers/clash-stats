@@ -6,13 +6,19 @@ I have played Clash of Clans since I was in sixth grade, and have always been on
 
  <details>
 <summary> 1. Setting up the environment </summary>
-<p> I used python <a href="https://docs.python.org/3/library/venv.html">venv</a> to set up my virtual environment to help maintain packages (we're going to deploy this to Azure later)
+<p> I used python <a href="https://docs.python.org/3/library/venv.html">venv</a> to set up my virtual environment to help maintain packages 
 </p>
 </details>
  <details>
-<summary> 2. Azure set up </summary>
-<p> I used <a href="https://azure.microsoft.com/en-us/">Azure's</a> free student tier to host this app 
-</p>
+<summary> 2. Getting a Clash of Clan API Token </summary>
+
+<li> Go to <a href="https://developer.clashofclans.com/#/documentation">Clash of Clan's API</a> 
+</li>
+<li> Generate a API_TOKEN 
+</li>
+<li> Turn your API_TOKEN into an enviornment variable 
+</li>
+
 </details>
 
 ## Installation

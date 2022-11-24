@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from main import get_user
+from clash import get_user
 
 app = Flask(__name__)
 
