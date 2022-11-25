@@ -1,5 +1,5 @@
 import unittest
-from clash import Player, Clan
+from clash import Player, Clan, Manager
 
 
 class TestPlayer(unittest.TestCase):
@@ -14,11 +14,14 @@ class TestPlayer(unittest.TestCase):
 
 class TestClan(unittest.TestCase):
     def player_equals(self):
-        p1 = Clan(tag="test", name="player1")
-        p2 = Clan(tag="test", name="player2")
+        c1 = Clan(tag="test", name="player1")
+        c2 = Clan(tag="test", name="player2")
 
 
 class TestManager(unittest.TestCase):
+    def find_clan(self):
+        m1 = Manager({}, {})
+
     def find_player(self):
         p1 = Player(tag="test", name="player1")
         p2 = Player(tag="test", name="player2")
