@@ -39,6 +39,10 @@ class Clan:
     def get_members(self):
         return self.members
 
+    def find_player(self, player_tag):
+        if player_tag in self.members:
+            return self.members[player_tag]
+
     # max capacity
     def is_full(self):
         return self.total_members >= 50
@@ -136,9 +140,9 @@ class Manager:
         else:
             raise Exception("Clan does not exist!")
 
-        response = requests.get(
-            "https://api.clashofclans.com/v1/clans?name=new%20zealand%20gold",
-            headers=headers,
-        )
-        clan = response.json()
-        print(clan)
+        # response = requests.get(
+        #     "https://api.clashofclans.com/v1/clans?name=new%20zealand%20gold",
+        #     headers=headers,
+        # )
+        # clan = response.json()
+        # print(clan)
